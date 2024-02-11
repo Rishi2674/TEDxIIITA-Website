@@ -22,7 +22,7 @@ export default function Carousel() {
       };
 
   return (
-    <div>
+    <div >
         <div className="slider-container">
       <Slider {...settings}>
         <div className='h-screen w-screen shadow-inner'>

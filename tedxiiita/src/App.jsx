@@ -3,13 +3,15 @@ import './App.css';
 import Spinner from './Components/Spinner/Spinner';
 import Navbar from './Components/Navbar';
 import Carousel from './Components/Carousel';
+import About from './Components/About';
 
 function App() {
   return (
     <div>
-      <Spinner/>
+      {/* <Spinner/> */}
       <Navbar/>
       <Carousel/>
+      <About/>
     </div>
   );
 }
