@@ -19,7 +19,7 @@ const Navbar = () => {
 
         {/* Desktop Site */}
         <div className="hidden lg:flex items-center">
-          <Link to="/" className="px-4 py-2 text-xl hover:underline" activeClassName="underline decoration-red-500">Home</Link>
+          <Link to="/" className="px-4 py-2 text-xl hover:underline text-white font-bold" activeClassName="underline decoration-red-500">Home</Link>
           <Link to="/speakers" className="px-4 py-2 text-xl hover:underline" activeClassName="underline decoration-red-500">Speakers</Link>
           <Link to="/Gallery" className="px-4 py-2 text-xl hover:underline" activeClassName="underline decoration-red-500">Gallery</Link>
           <Link to="/past-speakers" className="px-4 py-2 text-xl hover:underline" activeClassName="underline decoration-red-500">Past Speakers</Link>
