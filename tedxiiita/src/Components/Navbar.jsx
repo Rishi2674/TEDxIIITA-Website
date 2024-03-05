@@ -14,10 +14,9 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex items-center justify-between">
 
         {/* Logo */}
-        <div className=" w-36 ">
-          <Link to="/"><img src={tedx}/></Link>
+        <div >
+          <img className='w-fit py-4 ml-8' src={tedx}/>
         </div>
-
         {/* Desktop Site */}
         <div className="hidden lg:flex items-center">
           <Link to="/" className="px-4 py-2 text-xl cursor-pointer hover:underline text-white font-bold hover:decoration-red-500 hover:decoration-[3px] hover:underline-offset-8">Home</Link>
