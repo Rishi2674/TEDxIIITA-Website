@@ -33,7 +33,7 @@ export default function Timer() {
                 setTimerMinutes(minutes);
                 setTimerSeconds(seconds);
             }
-        },1000)
+        }, 1000 ); // Update every second
     }
 
     //Mounting the timer
@@ -45,7 +45,7 @@ export default function Timer() {
         return () => {
             clearInterval(interval.current);
         }
-    })
+    });
 
   return (
 

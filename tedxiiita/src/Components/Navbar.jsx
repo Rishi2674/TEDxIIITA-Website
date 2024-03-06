@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import tedx from '../assets/tedxiiita.png'
+import UnderlineEffect from './UnderlineEffect';
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,18 +16,19 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex items-center justify-between">
 
         {/* Logo */}
-        <div className=" w-36 ">
-          <Link to="/"><img src={tedx}/></Link>
+        <div >
+          <img className='w-fit py-4 ml-8' src={tedx}/>
         </div>
-
         {/* Desktop Site */}
         <div className="hidden lg:flex items-center">
-          <Link to="/" className="px-4 py-2 text-xl cursor-pointer hover:underline text-white font-bold hover:decoration-red-500 hover:decoration-[3px] hover:underline-offset-8">Home</Link>
+          <Link to="/" className="px-4 py-2 text-xl cursor-pointer hover:underline text-white font-bold hover:decoration-red-500 hover:decoration-[3px] hover:underline-offset-8">
+          Home
+            </Link>
           <Link to="/speakers" className="px-4 py-2 text-xl hover:underline hover:decoration-red-500 hover:decoration-[3px] hover:underline-offset-8 text-white font-bold">Speakers</Link>
           <Link to="/Gallery" className="px-4 py-2 text-xl hover:underline hover:decoration-red-500 hover:decoration-[3px] hover:underline-offset-8 text-white font-bold">Gallery</Link>
           <Link to="/past-speakers" className="px-4 py-2 text-xl hover:underline hover:decoration-red-500 hover:decoration-[3px] hover:underline-offset-8 text-white font-bold">Past Speakers</Link>
           <Link to="/contact" className="pl-4 pr-7 py-2 text-xl hover:underline hover:decoration-red-500 hover:decoration-[3px] hover:underline-offset-8 text-white font-bold" >Contact</Link>
-          <Link to="/contact" className=" text-white font-semibold px-4 py-2 text-lg  bg-red-600 hover:bg-red-300 rounded-md">REGISTER</Link>
+          <Link to="/register" className=" text-white font-semibold px-4 py-2 text-lg  bg-red-600 hover:bg-red-300 rounded-md">REGISTER</Link>
         </div>
 
         {/* Mobile SIte Menu Button */}
