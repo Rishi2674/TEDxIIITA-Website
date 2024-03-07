@@ -4,6 +4,8 @@ import Carousel from './Components/Carousel';
 import About from './Components/About';
 import PastSpeakers from './Pages/PastSPeakers'
 import { Route, Routes } from 'react-router-dom';
+import Register from './Components/Register';
+import Timer from './Components/Timer';
 
 function App() {
   return (
@@ -14,9 +16,18 @@ function App() {
       <Navbar/>
       <Carousel/>
       <About/>
+      <Timer/>
         </>
       }/>
       <Route exact path = "/past-speakers" element={<PastSpeakers/>}/>
+      <Route exact path = "/register" element={
+        <>
+          <Navbar/>
+          <Register/>
+          <Timer/>
+      
+        </>
+      }/>
     </Routes>
   );
 }

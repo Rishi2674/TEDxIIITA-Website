@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import TEDxStage from '../assets/TEDx_Stage_img.jpg';
+import Navbar from './Navbar';
 
 
 const Register = () => {
@@ -22,9 +23,10 @@ const Register = () => {
 
 return (
     
-
-    <div className="bg-black min-h-screen flex items-center justify-center flex-col pb-32">
-        <div className='uppercase text-white pt-20 pb-5 underline decoration-red-600 text-6xl font-bold'>
+    
+    <div className="bg-black min-h-screen flex items-center justify-center flex-col pb-32 ">
+      
+        <div className='uppercase text-white pt-32 pb-5 underline decoration-red-600 text-6xl font-bold'>
             Register
         </div>
         <div className='uppercase text-white pt-8 pb-20 text-3xl font-semibold'>
