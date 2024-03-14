@@ -12,13 +12,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 z-50 bg-gray-700 bg-opacity-40 shadow-md py-5 w-full  ">
-      <div className="container mx-auto px-4 flex items-center justify-between">
+    <nav className="fixed top-0 z-50 flex items-center justify-between bg-gray-700 bg-opacity-40 shadow-md py-5 w-full  ">
+       <div className='p-1 ml-20 '>
+          <img className='h-12' src={tedx}/>
+        </div>
+      <div className="px-4 flex items-center justify-center">
 
         {/* Logo */}
-        <div >
-          <img className='w-fit py-4 ml-8' src={tedx}/>
-        </div>
+       
         {/* Desktop Site */}
         <div className="hidden lg:flex items-center">
           <Link to="/" className="px-4 py-2 text-xl cursor-pointer hover:underline text-white font-bold hover:decoration-red-500 hover:decoration-[3px] hover:underline-offset-8">
