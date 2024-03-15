@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
-import TEDxStage from '../assets/TEDx_Stage_img.jpg';
-import Navbar from './Navbar';
-
+import React, { useState } from "react";
+import TEDxStage from "../assets/TEDx_Stage_img.jpg";
+import Navbar from "./Navbar";
+import register_x_logo from "../assets/register_x_logo.png";
 
 const Register = () => {
-
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    studentId: '',
+    name: "",
+    email: "",
+    studentId: "",
   });
 
   const handleChange = (event) => {
@@ -17,48 +16,54 @@ const Register = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setFormData({ name: '', email: '', studentId: '' });
+    setFormData({ name: "", email: "", studentId: "" });
   };
 
-
-return (
-    
-    
-    <div className="bg-black min-h-screen flex items-center justify-center flex-col pb-32 ">
+  return (
+    <div className="flex justify-center items-center h-screen bg-[url('../assets/register_bg.png')]">
+      {/* <img src={register_x_logo} className='h-80'/> */}
+      <div className="hidden md:block md:w-1/2">
+        <img
+          className="object-cover h-2/3 w-2/3 pl-32"
+          src={register_x_logo}
+          alt="Big Image"
+        />
+      </div>
       
-        <div className='uppercase text-white pt-32 pb-5 underline decoration-red-600 text-6xl font-bold'>
-            Register
-        </div>
-        <div className='uppercase text-white pt-8 pb-20 text-3xl font-semibold'>
-            12th April, 2024 @ IIITA Auditorium
-        </div>
-        
-        <img src={TEDxStage} alt="register" className = "pt-7 pb-32 w-full px- 5 bg-fixed"/>
 
-        <div className='uppercase text-white pt-8 pb-20 text-xl font-semibold'>
-            Please fill out your info below to register for the TEDxIIITA event on April 12, 2024 -
-        </div>
-
-        <div className='p-4 w-1/3'>
-        
-        <form  className='flex flex-col gap-4'>
-
-            <input placeholder='Name'
-             className='border p-5 bg-inherit rounded-lg' id='name' 
+      {/* Sign In Form on the right */}
+      <div className="md:w-1/2 p-8">
+        <h1 className="text-3xl font-bold mb-4">Sign In</h1>
+        <form className="space-y-4">
+          <div>
+            <label htmlFor="email" className="block text-gray-700">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              className="w-full border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 shadow-sm"
             />
-            <input type='email' placeholder='Email'
-             className='border p-5 bg-inherit rounded-lg' id='email' 
+          </div>
+          <div>
+            <label htmlFor="password" className="block text-gray-700">
+              Password
+            </label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              className="w-full border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 shadow-sm"
             />
-            <input type='password' placeholder='Password' 
-            className='border p-5 bg-inherit rounded-lg' id='password' 
-            />
-
-            <button  className='bg-red-700 text-xl text-white p-4 max-w-full font-semibold rounded-md uppercase hover:opacity-95 disabled:opacity-70'>
-              REGISTER
-            </button>
-
+          </div>
+          <button
+            type="submit"
+            className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+          >
+            Sign In
+          </button>
         </form>
-    
       </div>
     </div>
   );
