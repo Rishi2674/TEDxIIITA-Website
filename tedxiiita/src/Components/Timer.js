@@ -1,7 +1,13 @@
 import React, {useEffect, useRef, useState} from 'react'
 import './Timer.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Timer() {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
 
     // Hooks to set the timer elements
     const [timerDays, setTimerDays] = useState('00');
@@ -54,12 +60,12 @@ export default function Timer() {
     <section className="timer-container font-poppins">
         <section className="timer">
             {/* Heading */}
-            <div >
+            <div data-aos ="fade-up" data-aos-duration='1500' >
                 <p>Countdown to TEDxIIITA '24</p>
             </div>
 
             {/* Main Numbers */}
-            <div>
+            <div data-aos ="fade-up" data-aos-duration='1500'>
                 <section>
                     <p>{timerDays}</p>
                     <p>Days</p>
