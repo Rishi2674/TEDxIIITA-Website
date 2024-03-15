@@ -19,6 +19,9 @@ const Navbar = () => {
       <div className="px-4 flex items-center justify-center">
 
         {/* Logo */}
+        <div >
+          <img className='' src={tedx} height={180} width={180}/>
+        </div>
        
         {/* Desktop Site */}
         <div className="hidden lg:flex items-center">

@@ -11,7 +11,12 @@ module.exports = {
     files: ["./src/**/*.{js,jsx,ts,tsx}"],
   },
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'footer-gray': '#2E2E2E',
+        'footer-content': '#fff',
+      },
+    },
   },
   plugins: [
     require('taos/plugin')
