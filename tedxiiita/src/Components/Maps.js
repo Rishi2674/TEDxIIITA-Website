@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { GoogleMap, useJsApiLoader, Marker , InfoWindow } from '@react-google-maps/api';
 
 const containerStyle = {
-  width: 'screen',
+  width: 'full',
   height: '300px'
 };
 
@@ -39,7 +39,7 @@ function MyComponent() {
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
-        zoom={5}
+        //zoom={2}
         onLoad={onLoad}
         onUnmount={onUnmount}
       >

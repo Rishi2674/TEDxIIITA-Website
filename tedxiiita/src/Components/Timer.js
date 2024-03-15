@@ -51,10 +51,10 @@ export default function Timer() {
 
     //  Wasn't able to write in Tailwind so made a separate CSS file
 
-    <section className="timer-container">
+    <section className="timer-container font-poppins">
         <section className="timer">
             {/* Heading */}
-            <div>
+            <div >
                 <p>Countdown to TEDxIIITA '24</p>
             </div>
 

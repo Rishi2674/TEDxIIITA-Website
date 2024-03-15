@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 z-50 flex items-center justify-between bg-gray-700 bg-opacity-40 shadow-md py-5 w-full  ">
+    <nav className="fixed top-0 z-50 flex items-center justify-between bg-gray-700 bg-opacity-40 shadow-md py-5 w-full font-poppins  ">
       
       {/* Logo */}
        <div className='p-1 ml-20 '>
@@ -24,13 +24,13 @@ const Navbar = () => {
        
         {/* Desktop Site */}
         <div className="hidden lg:flex items-center">
-          <Link to="/" className="px-4 py-2 text-xl cursor-pointer hover:underline text-white font-bold hover:decoration-red-500 hover:decoration-[3px] hover:underline-offset-8">
+          <Link to="/" className="px-4 py-2 text-xl cursor-pointer hover:underline text-white  hover:decoration-red-500 hover:decoration-[3px] hover:underline-offset-8">
           Home
             </Link>
-          <Link to="/speakers" className="px-4 py-2 text-xl hover:underline hover:decoration-red-500 hover:decoration-[3px] hover:underline-offset-8 text-white font-bold">Speakers</Link>
-          <Link to="/Gallery" className="px-4 py-2 text-xl hover:underline hover:decoration-red-500 hover:decoration-[3px] hover:underline-offset-8 text-white font-bold">Gallery</Link>
-          <Link to="/past-speakers" className="px-4 py-2 text-xl hover:underline hover:decoration-red-500 hover:decoration-[3px] hover:underline-offset-8 text-white font-bold">Past Speakers</Link>
-          <Link to="/contact" className="pl-4 pr-7 py-2 text-xl hover:underline hover:decoration-red-500 hover:decoration-[3px] hover:underline-offset-8 text-white font-bold" >Contact</Link>
+          <Link to="/speakers" className="px-4 py-2 text-xl hover:underline hover:decoration-red-500 hover:decoration-[3px] hover:underline-offset-8 text-white ">Speakers</Link>
+          <Link to="/Gallery" className="px-4 py-2 text-xl hover:underline hover:decoration-red-500 hover:decoration-[3px] hover:underline-offset-8 text-white ">Gallery</Link>
+          <Link to="/past-speakers" className="px-4 py-2 text-xl hover:underline hover:decoration-red-500 hover:decoration-[3px] hover:underline-offset-8 text-white ">Past Speakers</Link>
+          <a href="#contact" className="pl-4 pr-7 py-2 text-xl hover:underline hover:decoration-red-500 hover:decoration-[3px] hover:underline-offset-8 text-white" >Contact</a>
           <Link to="/register" className=" text-white font-semibold px-4 py-2 text-lg  bg-red-600 hover:bg-red-300 rounded-md">REGISTER</Link>
         </div>
 
@@ -44,19 +44,19 @@ const Navbar = () => {
 
 
       {isOpen && (
-        <div className="lg:hidden mt-2 bg-gray-700 bg-opacity-40 shadow-md rounded-md">
+        <div className="lg:hidden mt-2 bg-gray-700 bg-opacity-40 shadow-md rounded-md font-poppins">
           <ul className="px-4 py-2 space-y-2">
             <li>
-              <Link to="/" className="block px-4 py-2  text-white font-bold hover:decoration-red-500 hover:decoration-[3px] hover:underline-offset-8">Home</Link>
+              <Link to="/" className="block px-4 py-2  text-white font-semibold hover:decoration-red-500 hover:decoration-[3px] hover:underline-offset-8">Home</Link>
             </li>
             <li>
-              <Link to="/contact" className="block px-4 py-2  text-white font-bold hover:decoration-red-500 hover:decoration-[3px] hover:underline-offset-8">Contact</Link>
+              <a href="#contact" className="block px-4 py-2  text-white font-semibold hover:decoration-red-500 hover:decoration-[3px] hover:underline-offset-8">Contact</a>
             </li>
             <li>
-              <Link to="/register" className="block px-4 py-2  text-white font-bold hover:decoration-red-500 hover:decoration-[3px] hover:underline-offset-8">Past Speakers</Link>
+              <Link to="/register" className="block px-4 py-2  text-white font-semibold hover:decoration-red-500 hover:decoration-[3px] hover:underline-offset-8">Past Speakers</Link>
             </li>
             <li>
-              <Link to="/past-speakers" className="block px-4 py-2  text-white font-bold hover:decoration-red-500 hover:decoration-[3px] hover:underline-offset-8">Register</Link>
+              <Link to="/past-speakers" className="block px-4 py-2  text-white font-semibold hover:decoration-red-500 hover:decoration-[3px] hover:underline-offset-8">Register</Link>
             </li>
           </ul>
         </div>

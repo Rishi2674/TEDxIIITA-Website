@@ -9,6 +9,7 @@ import Timer from './Components/Timer';
 import Maps from './Components/Maps';
 import Footer from './Components/Footer';
 import ContactForm from './Components/Contact';
+import Team from './Components/Teams/Team'
 
 function App() {
   return (
@@ -25,10 +26,10 @@ function App() {
       <About/>
       <Timer/>
       <ContactForm/>
-      <div className='px-4'>
+      {/* <div className='px-4'>
       <Maps/>
 
-      </div>
+      </div> */}
 
       <Footer/>
 
@@ -44,6 +45,7 @@ function App() {
       
         </>
       }/>
+      <Route exact path = "/Gallery" element={<Team/>}/>
     </Routes>
     </>
   );

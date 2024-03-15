@@ -28,8 +28,8 @@ function Image({ img, name }) {
   const y = useParallax(scrollYProgress, 300);
 
   return (
-    <section className="flex justify-center items-center relative snap-center h-[100vh]">
-      <h2 style={{ y }} className="text-white font-bold text-4xl w-[20%] text-center font-mono">{name}</h2>
+    <section className="flex justify-center items-center relative snap-center h-[100vh] font-poppins">
+      <h2 style={{ y }} className="text-white font-bold text-4xl w-[20%] text-center">{name}</h2>
       <div ref={ref} className="h-[600px] w-[500px] relative flex justify-center items-center overflow-hidden">
         <img src={img} alt="A London skyscraper" className=" absolute h-3/4 w-5/6" />
       </div>
@@ -68,7 +68,7 @@ export default function App() {
       {data.map((data) => (
         <Image img = {data.images} name = {data.name1} />
       ))}
-      <motion.div className=" fixed left-0 bottom-[50px] right-0 h-[5px] bg-white" style={{ scaleX }} />
+      <motion.div className=" fixed left-0 bottom-[50px] right-0 h-[5px] bg-red-600" style={{ scaleX }} />
       </div>
     </>
   );
