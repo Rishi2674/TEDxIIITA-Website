@@ -13,15 +13,14 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 z-50 flex items-center justify-between bg-gray-700 bg-opacity-40 shadow-md py-5 w-full  ">
+      
+      {/* Logo */}
        <div className='p-1 ml-20 '>
           <img className='h-12' src={tedx}/>
         </div>
       <div className="px-4 flex items-center justify-center">
 
-        {/* Logo */}
-        <div >
-          <img className='' src={tedx} height={180} width={180}/>
-        </div>
+       
        
         {/* Desktop Site */}
         <div className="hidden lg:flex items-center">

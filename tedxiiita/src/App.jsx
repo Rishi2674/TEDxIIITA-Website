@@ -6,6 +6,7 @@ import PastSpeakers from './Pages/PastSPeakers'
 import { Route, Routes } from 'react-router-dom';
 import Register from './Components/Register';
 import Timer from './Components/Timer';
+import Maps from './Components/Maps';
 import Footer from './Components/Footer';
 import ContactForm from './Components/Contact';
 
@@ -24,6 +25,11 @@ function App() {
       <About/>
       <Timer/>
       <ContactForm/>
+      <div className='px-4'>
+      <Maps/>
+
+      </div>
+
       <Footer/>
 
         </>
