@@ -52,7 +52,7 @@ export default function Contact() {
                 <hr data-aos ="fade-up" data-aos-duration='1500' className='w-80 h-[6px] mx-auto  rounded md:my-9 bg-red-600'></hr>
                 <div className='flex items-center justify-center gap-28 p-16'>
                     <div>
-                        <button data-aos ="zoom-in" data-aos-duration='750' className='rounded-full border-2 border-gray-200 hover:scale-110 duration-300'>
+                    <button data-aos ="zoom-in" data-aos-duration='750' className='rounded-full border-2 border-gray-200 hover:scale-110 duration-300'>
                         <a href="mailto:tedxiiita@gmail.com">
                             <div className='text-white text-6xl p-5'>
                             <CiMail/>
@@ -62,7 +62,7 @@ export default function Contact() {
                         </button>
                     </div>
                     <div>
-                        <button data-aos ="zoom-in" data-aos-duration='750' className='rounded-full border-2 border-gray-200 hover:scale-110 duration-300'>
+                    <button data-aos ="zoom-in" data-aos-duration='750' className='rounded-full border-2 border-gray-200 hover:scale-110 duration-300'>
                         <a href="https://www.instagram.com/tedxiiita/" target="_blank">
                             <div className='text-white text-6xl p-5 '>
                             <FaInstagram/>
@@ -72,7 +72,7 @@ export default function Contact() {
                         </button>
                     </div>
                     <div>
-                        <button data-aos ="zoom-in" data-aos-duration='750' className='rounded-full border-2 border-gray-200 hover:scale-110 duration-300'>
+                    <button data-aos ="zoom-in" data-aos-duration='750' className='rounded-full border-2 border-gray-200 hover:scale-110 duration-300'>
                         <a href="https://www.facebook.com/tedxiiita/" target="_blank">
                             <div className='text-white text-5xl p-6'>
                             <FaFacebookF/>
@@ -82,7 +82,7 @@ export default function Contact() {
                         </button>
                     </div>
                     <div>
-                        <button data-aos ="zoom-in" data-aos-duration='750' className='rounded-full border-2 border-gray-200 hover:scale-110 duration-300'>
+                    <button data-aos ="zoom-in" data-aos-duration='750' className='rounded-full border-2 border-gray-200 hover:scale-110 duration-300'>
                         <a href="https://www.flickr.com/photos/ams_iiita/albums/72157706287414711" target="_blank">
                             <div className='text-white text-5xl p-7'>
                             <FaFlickr/>

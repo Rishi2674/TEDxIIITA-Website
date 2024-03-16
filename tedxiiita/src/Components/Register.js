@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import TEDxStage from "../assets/TEDx_Stage_img.jpg";
 import Navbar from "./Navbar";
 import register_x_logo from "../assets/register_x_logo.png";
+import register_bg from "../assets/register_bg.png";
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -20,11 +21,11 @@ const Register = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen bg-[url('../assets/register_bg.png')]">
-      {/* <img src={register_x_logo} className='h-80'/> */}
-      <div className="hidden md:block md:w-1/2">
+    <div className="flex justify-center items-center h-screen bg-slate-900 w-full">
+      <img src={register_bg} className='h-screen w-full absolute'/>
+      <div className="md:w-1/2 justify-center flex">
         <img
-          className="object-cover h-2/3 w-2/3 pl-32"
+          className="object-cover h-2/3 w-2/3 opacity-95"
           src={register_x_logo}
           alt="Big Image"
         />
@@ -32,34 +33,36 @@ const Register = () => {
       
 
       {/* Sign In Form on the right */}
-      <div className="md:w-1/2 p-8">
-        <h1 className="text-3xl font-bold mb-4">Sign In</h1>
-        <form className="space-y-4">
-          <div>
-            <label htmlFor="email" className="block text-gray-700">
+      <div className="md:w-1/2 justify-center items-center flex-col">
+        <h1 className="text-3xl font-bold mb-8 text-white justify-center flex">Sign In</h1>
+        <form className="space-y-4 flex flex-col justify-center items-center gap-2">
+          <div className="w-3/4">
+            <label htmlFor="email" className="block text-white opacity-90 text-lg dark:text-white pb-2">
               Email
             </label>
             <input
               type="email"
               id="email"
               name="email"
-              className="w-full border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 shadow-sm"
+              // placeholder="Enter your email"
+              className="w-full justify-center shadow-sm bg-inherit text-white border-b-2"
             />
           </div>
-          <div>
-            <label htmlFor="password" className="block text-gray-700">
+          <div className="w-3/4">
+            <label htmlFor="password" className="block text-white opacity-90 text-lg dark:text-white pb-2">
               Password
             </label>
             <input
               type="password"
               id="password"
-              name="password"
-              className="w-full border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 shadow-sm"
+              name="password"  
+              // placeholder="Enter your password"
+              className="w-full border-gray-300 shadow-sm bg-inherit text-white border-b-2" 
             />
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            className="w-1/3 bg-red-600 text-white py-2 rounded-md hover:bg-red-700 focus:ring-2 focus:ring-red-700 focus:ring-opacity-50"
           >
             Sign In
           </button>

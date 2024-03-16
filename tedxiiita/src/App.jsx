@@ -37,13 +37,13 @@ function App() {
       }/>
       <Route exact path = "/past-speakers" element={<PastSpeakers/>}/>
       <Route exact path = "/register" element={
-        <>
+        <div>
           {/* <Navbar/> */}
           <Register/>
           <Timer/>
           <Footer/>
       
-        </>
+        </div>
       }/>
       <Route exact path = "/Gallery" element={<Team/>}/>
     </Routes>
